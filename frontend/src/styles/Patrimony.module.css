@@ -1,0 +1,739 @@
+.container {
+  padding: 2rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.subtitle {
+  color: #64748b;
+  margin: 0.5rem 0 0 0;
+}
+
+.headerControls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.toggleButton {
+  background: white;
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.toggleButton:hover {
+  background-color: #f9fafb;
+}
+
+.addButton {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.addButton:hover {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+}
+
+/* KPIs Grid */
+.kpisGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.kpiCard {
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid;
+}
+
+.kpiBlue {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  border-color: #bfdbfe;
+}
+
+.kpiGreen {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  border-color: #bbf7d0;
+}
+
+.kpiRed {
+  background: linear-gradient(135deg, #fef2f2, #fee2e2);
+  border-color: #fecaca;
+}
+
+.kpiPurple {
+  background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+  border-color: #e9d5ff;
+}
+
+.kpiHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.kpiTitle {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.kpiBlue .kpiTitle {
+  color: #1e40af;
+}
+
+.kpiGreen .kpiTitle {
+  color: #166534;
+}
+
+.kpiRed .kpiTitle {
+  color: #991b1b;
+}
+
+.kpiPurple .kpiTitle {
+  color: #7e22ce;
+}
+
+.kpiIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.kpiBlue .kpiIcon {
+  color: #3b82f6;
+}
+
+.kpiGreen .kpiIcon {
+  color: #10b981;
+}
+
+.kpiRed .kpiIcon {
+  color: #ef4444;
+}
+
+.kpiPurple .kpiIcon {
+  color: #8b5cf6;
+}
+
+.kpiValue {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+}
+
+.kpiBlue .kpiValue {
+  color: #1e3a8a;
+}
+
+.kpiGreen .kpiValue {
+  color: #14532d;
+}
+
+.kpiRed .kpiValue {
+  color: #7f1d1d;
+}
+
+.kpiPurple .kpiValue {
+  color: #581c87;
+}
+
+.kpiDescription {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.kpiBlue .kpiDescription {
+  color: #3730a3;
+}
+
+.kpiGreen .kpiDescription {
+  color: #15803d;
+}
+
+.kpiRed .kpiDescription {
+  color: #b91c1c;
+}
+
+.kpiPurple .kpiDescription {
+  color: #7c3aed;
+}
+
+/* Progress Bar */
+.progressBar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: #e5e7eb;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(135deg, #8b5cf6, #a855f7);
+  border-radius: 0.25rem;
+  transition: width 0.3s ease;
+}
+
+/* Charts Layout */
+.chartsLayout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.chartCard {
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+}
+
+.chartHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.chartIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #3b82f6;
+}
+
+.chartTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.chartDescription {
+  color: #64748b;
+  margin: 0 0 1rem 0;
+  font-size: 0.875rem;
+}
+
+.chartContainer {
+  height: 16rem;
+}
+
+/* Pie Chart Legend */
+.pieLegend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.legendColor {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.legendLabel {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 0.875rem;
+}
+
+.legendValue {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Items List */
+.itemsCard {
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+}
+
+.itemsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.itemsTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 0.25rem 0;
+}
+
+.itemsDescription {
+  color: #64748b;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.filterSelect {
+  min-width: 12rem;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.itemCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s;
+}
+
+.itemCard:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.itemInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.itemIcon {
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.itemIcon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #6b7280;
+}
+
+.itemDetails h4 {
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 0.25rem 0;
+}
+
+.itemBadges {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.badgeSecondary {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+
+.badgePrimary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.badgeDestructive {
+  background-color: #ef4444;
+  color: white;
+}
+
+.itemValues {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.valueInfo {
+  text-align: right;
+}
+
+.valueAmount {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 0.25rem 0;
+}
+
+.variation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.variationPositive {
+  color: #059669;
+}
+
+.variationNegative {
+  color: #dc2626;
+}
+
+.variationIcon {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.25rem;
+}
+
+.itemActions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editButton {
+  color: #2563eb;
+}
+
+.editButton:hover {
+  background-color: #dbeafe;
+}
+
+.deleteButton {
+  color: #dc2626;
+}
+
+.deleteButton:hover {
+  background-color: #fecaca;
+}
+/* Modal Styles - ATUALIZADO */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem; /* Adiciona um pouco de padding para mobile */
+}
+
+.modalContent {
+  top: -30%;
+  background: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  max-width: 28rem;
+  width: 90vw;
+  max-height: 85vh; /* Reduz um pouco a altura máxima */
+  overflow-y: auto;
+  margin: auto; /* Centraliza */
+  position: relative;
+}
+
+/* Adiciona estas regras para melhorar o scroll em mobile */
+@media (max-height: 600px) {
+  .modalContent {
+    max-height: 95vh;
+    padding: 1.5rem;
+  }
+}
+
+/* Garante que o modal fique sempre visível */
+.modalOverlay {
+  overflow: auto;
+}
+.modalHeader {
+  margin-bottom: 1.5rem;
+}
+
+.modalTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 0.5rem 0;
+}
+
+.modalDescription {
+  color: #64748b;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formLabel {
+  display: block;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.formInput {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.formSelect {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.cancelButton {
+  background: #6b7280;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  background: #4b5563;
+}
+
+.confirmButton {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.confirmButton:hover {
+  background: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .kpisGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .chartsLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .headerControls {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .kpisGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .itemsHeader {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .itemCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .itemValues {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Animations */
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.slideUp {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delay1 {
+  animation-delay: 0.1s;
+}
+
+.delay2 {
+  animation-delay: 0.2s;
+}
+
+.delay3 {
+  animation-delay: 0.3s;
+}
+
+/* Custom Tooltip Styles */
+.customTooltip {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.tooltipLabel {
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 0.25rem 0;
+  font-size: 0.875rem;
+}
+
+.tooltipValue {
+  font-weight: 700;
+  color: #3b82f6;
+  margin: 0 0 0.125rem 0;
+  font-size: 0.875rem;
+}
+
+.tooltipPercent {
+  color: #64748b;
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+/* Chart Container Improvements */
+.chartContainer {
+  height: 16rem;
+  position: relative;
+}
+
+/* Responsive Container Fixes */
+.recharts-wrapper {
+  font-family: inherit;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-size: 12px;
+}
+
+.recharts-legend-wrapper {
+  bottom: -10px !important;
+}
+
+/* Line Chart Specific Styles */
+.lineChart {
+  background: white;
+}
+
+/* Pie Chart Specific Styles */
+.pieChart {
+  background: white;
+}

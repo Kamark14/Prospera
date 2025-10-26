@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Prospera",
+    "slug": "Prospera",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/loguinho.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/loguinho.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/footer-logo.png",
+        "backgroundColor": "#003366"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.lucas11santana.Prospera"
+    },
+    "web": {
+      "favicon": "./assets/loguinho.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "95b481f2-33ff-4a75-8aba-d674235cb02c"
+      }
+    }
+  }
+}
