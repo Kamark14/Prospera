@@ -6,6 +6,7 @@ use prospera_db;
 -- tabela de cadastro dos usuarios
 create table usuario (
 	Usuario_Id INT AUTO_INCREMENT PRIMARY KEY,
+	image_profile VARCHAR(255),
 	Usuario_Nome VARCHAR(100) NOT NULL UNIQUE,
     Usuario_CPF VARCHAR(100) NOT NULL UNIQUE,
     Usuario_Email VARCHAR(100) NOT NULL UNIQUE,
